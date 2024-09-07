@@ -7,6 +7,7 @@ let clockBtn = document.querySelector(".clockSelect")
 let stopwatchBtn = document.querySelector(".stopwatchsel")
 let Btns = document.querySelector(".Btns")
 
+// these func is use to switch between stopwatch and digital clock
 clockBtn.addEventListener('click' , ()=>{
     stopwatch.classList = 'watch'
     clock.classList = 'clock'
@@ -18,6 +19,7 @@ stopwatchBtn.addEventListener('click' , () =>{
     Btns.classList = 'button'
 })
 
+//to get current hour
 setInterval(timehandler , 1000)
 function timehandler(){
     let date = new Date()
